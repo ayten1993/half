@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{	
+	background: url(ayten1/mer2.avif);
+}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Square+Peg&display=swap');
+#div1{
+	display: flex;
+	margin-top: 3rem;
+	padding: 25px 0;
+	padding-left: 5rem;
+	background: lightgray;
+	opacity: .7;
+}
+#img_qutu{
+	display: inline-block;
+	width: 250px;
+	position: absolute;
+	left: 10px;
+	z-index: 1;
+	top: -45px;
+}
+#img_qutu img{
+	width: 100%;
+}
+#img_qutu p{
+	font-family: 'Square Peg', cursive;
+	position: absolute;
+	top: 170px;
+	left: 70px;
+	font-size: .8rem;
+}
+#ul1{
+	display: flex;
+	position: relative;
+	left: 40%;
+}
+.li1{
+	display: flex;
+	float: left;
+	margin: 5px 25px;
+}
+.li1 a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+	font-size: 1.5rem;
+}
+.li1 a:hover{	
+	border-bottom: 2px solid black;
+	transition: 4s;
+}
+#div2{
+	margin: 2rem;
+}
+#div2 figure{
+	margin: 1.1%;
+	display: inline-block;
+	width: 22%;
+}
+#div2 figure span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+#div2 figure figcaption{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+#div2 figure img{
+	width: 100%;
+	height: 100%;
+}
+
+
+@media (max-width: 550px){
+	#img_qutu{
+	    width: 250px;
+	    left: 10px;
+	    top: -80px;
+    }
+    #img_qutu p{
+	    font-size: .65rem;
+    }
+	#div1{
+		display: block;
+		padding: 5px;
+		margin: 0;
+	}
+	#div1 #ul1{
+		display: block;
+		padding: 0;
+		margin: 0;
+		left: 60%;
+	}
+	#div1 #ul1 .li1{
+		display: block;
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+	#div1 #ul1 .li1 a{
+		font-size: 1.2rem;
+		padding: 0;
+		margin: 5px 10px;
+	}
+	#div2{
+		width: 100%;
+	    margin: 0;
+    }
+    #div2 figure{
+	    margin: 0;
+	    width: 100%;
+    }
+    #div2 figure img{
+        margin: 1% 5%;
+	    width: 90%;
+    }    
+}
